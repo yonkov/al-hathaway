@@ -1,0 +1,89 @@
+.nasiothemes-button .dashicons {
+  line-height: 1.4em;
+}
+
+.wp-core-ui .nasiothemes-button-preview.button-primary {
+	background: #6e1b45;
+	border-color: #6e1b45;
+	color: #fff;
+}
+
+.wp-core-ui .nasiothemes-button-preview.button-primary:hover,
+.wp-core-ui .nasiothemes-button-preview.button-primary:focus,
+.wp-core-ui .nasiothemes-button-preview.button-primary:active {
+	background: #571536;
+	border-color: #571536;
+	color: #fff;
+}
+
+.wp-core-ui .nasiothemes-button-preview.button-primary:focus {
+	box-shadow: 0 0 0 1px #fff, 0 0 0 3px #6e1b45;
+}
+
+.nasiothemes-message-content {
+	padding: 20px 10px;
+}
+
+.nasiothemes-message-image {
+	display: inline-block;
+	margin-right: 30px;
+	vertical-align: top;
+	width: 180px;
+	outline: 1px solid rgba(0, 0, 0, 0.12);
+	outline-offset: -1px;
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.nasiothemes-message-image .nasiothemes-screenshot {
+	height: auto;
+	width: 100%;
+}
+
+.nasiothemes-header .nasiothemes-message-image {
+	float: left;
+}
+
+.nasiothemes-message-text {
+	display: inline-block;
+	font-size: 14px;
+	max-width: 800px;
+	vertical-align: middle;
+}
+
+.nasiothemes-message-text .nasiothemes-message-heading {
+	margin-top: 0;
+}
+
+.nasiothemes-message-text .notice-buttons {
+	margin-bottom: 0;
+}
+
+.nasiothemes-message-text p {
+	font-size: 14px;
+	margin: 1.5em 0;
+}
+
+.nasiothemes-message-text p:first-of-type {
+	margin-top: 0;
+}
+
+.nasiothemes-message-text p a.button {
+	margin-right: 8px;
+}
+
+.nasiothemes-notice {
+	position: relative;
+	background: #fff;
+	border-left: 4px solid #3858e9;
+}
+
+.nasiothemes-notice .notice-dismiss {
+	text-decoration: none;
+}
+
+@media (min-width: 40em) {
+
+	.nasiothemes-message-text {
+		width: calc(100% - 220px);
+	}
+}
