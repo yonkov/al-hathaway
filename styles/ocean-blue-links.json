@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Ocean Blue Links",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "color": "#F0F8FF", "name": "Base" },
+				{ "slug": "contrast", "color": "#003366", "name": "Contrast" },
+				{ "slug": "links", "color": "#0066CC", "name": "Links" },
+				{ "slug": "links-hover", "color": "#003366", "name": "Links (Hover)" }
+			]
+		},
+		"custom": {
+			"variation": "ocean-blue-links"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		}
+	}
+}

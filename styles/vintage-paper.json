@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"title": "Vintage Paper",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "base", "color": "#F3EFE4", "name": "Base" },
+				{ "slug": "contrast", "color": "#3D2B1F", "name": "Contrast" },
+				{ "slug": "links", "color": "#3D2B1F", "name": "Links" }
+			]
+		},
+		"custom": { "variation": "vintage-paper" }
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--base)",
+			"text": "var(--wp--preset--color--contrast)"
+		}
+	}
+}

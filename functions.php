@@ -9,31 +9,31 @@
 
 function al_hathaway_setup() {
 
-	// Make theme available for translation.
-	load_theme_textdomain( 'al-hathaway', get_template_directory() . '/languages' );
+		// Make theme available for translation.
+		load_theme_textdomain( 'al-hathaway', get_template_directory() . '/languages' );
 
-	// Add theme support
-	add_theme_support( 'automatic-feed-links' );
-	add_theme_support( 'wp-block-styles' );
-	add_theme_support( 'title-tag' );
-	add_theme_support( 'post-thumbnails' );
-	add_theme_support( 'editor-styles' );
-	add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
-	add_theme_support( 'responsive-embeds' );
+		// Add theme support
+		add_theme_support( 'automatic-feed-links' );
+		add_theme_support( 'wp-block-styles' );
+		add_theme_support( 'title-tag' );
+		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'editor-styles' );
+		add_theme_support( 'html5', array( 'comment-form', 'comment-list' ) );
+		add_theme_support( 'responsive-embeds' );
 
-	// Let businesses add their logo (Appearance > Editor, and the Site Logo block).
-	add_theme_support(
-		'custom-logo',
-		array(
-			'height'      => 120,
-			'width'       => 400,
-			'flex-height' => true,
-			'flex-width'  => true,
-		)
-	);
+		// Let businesses add their logo (Appearance > Editor, and the Site Logo block).
+		add_theme_support(
+			'custom-logo',
+			array(
+				'height'      => 120,
+				'width'       => 400,
+				'flex-height' => true,
+				'flex-width'  => true,
+			)
+		);
 
-	// Load the front-end stylesheet inside the block editor so links match.
-	add_editor_style( 'style.css' );
+		// Load the front-end stylesheet inside the block editor so links match.
+		add_editor_style( 'style.css' );
 }
 add_action( 'after_setup_theme', 'al_hathaway_setup' );
 
@@ -41,25 +41,25 @@ add_action( 'after_setup_theme', 'al_hathaway_setup' );
  * Enqueue scripts and styles
  */
 function al_hathaway_scripts() {
-	wp_enqueue_style( 'al-hathaway-styles', get_template_directory_uri() . '/style.css', array(), filemtime( get_template_directory() . '/style.css' ) );
+		wp_enqueue_style( 'al-hathaway-styles', get_template_directory_uri() . '/style.css', array(), filemtime( get_template_directory() . '/style.css' ) );
 }
 add_action( 'wp_enqueue_scripts', 'al_hathaway_scripts' );
 
 // Add scripts and styles for backend
 function al_hathaway_scripts_admin( $hook ) {
-	// Styles
-	wp_enqueue_style(
-		'al_hathaway-style-admin',
-		get_template_directory_uri() . '/admin/css/admin.css',
-		'',
-		filemtime( get_template_directory() . '/admin/css/admin.css' ),
-		'all'
-	);
+		// Styles
+		wp_enqueue_style(
+			'al_hathaway-style-admin',
+			get_template_directory_uri() . '/admin/css/admin.css',
+			'',
+			filemtime( get_template_directory() . '/admin/css/admin.css' ),
+			'all'
+		);
 }
 add_action( 'admin_enqueue_scripts', 'al_hathaway_scripts_admin' );
 
 function al_hathaway_excerpt_length( $length ) {
-	return 25;
+		return 25;
 }
 add_filter( 'excerpt_length', 'al_hathaway_excerpt_length' );
 
@@ -71,25 +71,25 @@ function al_hathaway_register_block_patterns() {
 	$block_pattern_categories = array(
 		'al-hathaway' => array( 'label' => esc_html__( 'Al Hathaway', 'al-hathaway' ) ),
 	);
-
 	$block_pattern_categories = apply_filters( 'al_hathaway_block_pattern_categories', $block_pattern_categories );
-
 	foreach ( $block_pattern_categories as $name => $properties ) {
 		if ( ! WP_Block_Pattern_Categories_Registry::get_instance()->is_registered( $name ) ) {
-			register_block_pattern_category( $name, $properties );
+				register_block_pattern_category( $name, $properties );
 		}
 	}
 }
 add_action( 'init', 'al_hathaway_register_block_patterns', 9 );
 
 /* Add custom body class based on the style variation */
+
 function al_hathaway_body_classes( $classes ) {
+
 	$style_variation = wp_get_global_settings( array( 'custom', 'variation' ) );
-	if ( is_string( $style_variation ) && 'default' !== $style_variation ) {
-		$classes[] = 'variation-' . sanitize_html_class( $style_variation );
-	}
+	$classes[] = 'variation-' . $style_variation;
+	
 	return $classes;
 }
+
 add_filter( 'body_class', 'al_hathaway_body_classes' );
 
 function al_hathaway_call_to_action_markup() {
