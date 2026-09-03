@@ -4,7 +4,7 @@ Tags: portfolio, news, blog, one-column, two-columns, wide-blocks, custom-colors
 Requires at least: 6.1
 Tested up to: 7.0
 Requires PHP: 5.6
-Stable tag: 0.0.2
+Stable tag: 0.0.3
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Source: https://github.com/impallari/Libre-Baskerville
 This theme bundles no third-party images or libraries.
 
 == Changelog ==
+
+= 0.0.3 - September 2026 =
+* Refine theme variations
 
 = 0.0.2 - August 2026 =
 * Add theme variations

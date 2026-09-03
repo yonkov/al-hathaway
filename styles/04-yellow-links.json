@@ -5,7 +5,7 @@
 	"settings": {
 		"color": {
 			"palette": [
-				{ "slug": "base", "color": "#faf8f4", "name": "Base" },
+				{ "slug": "base", "color": "#fff", "name": "Base" },
 				{ "slug": "contrast", "color": "#14243d", "name": "Contrast" },
 				{ "slug": "links", "color": "#946611", "name": "Links" },
 				{ "slug": "links-hover", "color": "#946611", "name": "Links (Hover)" }
