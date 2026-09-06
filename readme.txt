@@ -2,9 +2,9 @@
 Contributors: nravota12
 Tags: portfolio, news, blog, one-column, two-columns, wide-blocks, custom-colors, custom-logo, custom-menu, editor-style, block-patterns, block-styles, full-site-editing, translation-ready, rtl-language-support, featured-images, threaded-comments
 Requires at least: 6.1
-Tested up to: 7.0
+Tested up to: 7.1
 Requires PHP: 5.6
-Stable tag: 0.0.3
+Stable tag: 0.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -32,6 +32,9 @@ Source: https://github.com/impallari/Libre-Baskerville
 This theme bundles no third-party images or libraries.
 
 == Changelog ==
+
+= 0.0.4 - September 2026 =
+* Add high contrast variation and improve dark mode variation
 
 = 0.0.3 - September 2026 =
 * Refine theme variations
